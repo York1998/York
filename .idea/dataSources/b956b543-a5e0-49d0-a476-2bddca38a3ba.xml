@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="project@localhost">
+  <database-model serializer="dbm" dbms="UNKNOWN" family-id="UNKNOWN" format-version="4.14">
+    <root id="1">
+      <ServerVersion>0.0</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <database id="2" parent="1" name="information_schema"/>
+    <database id="3" parent="1" name="javaee"/>
+    <database id="4" parent="1" name="jeebbs4"/>
+    <database id="5" parent="1" name="mysql"/>
+    <database id="6" parent="1" name="project">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="7" parent="1" name="test"/>
+    <schema id="8" parent="6">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="9" parent="8" name="address"/>
+    <table id="10" parent="8" name="admin"/>
+    <table id="11" parent="8" name="employee"/>
+    <column id="12" parent="9" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="13" parent="9" name="name">
+      <Position>2</Position>
+      <DataType>VARCHAR(200)|12s</DataType>
+    </column>
+    <column id="14" parent="9" name="emm_id">
+      <Position>3</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="15" parent="9" name="isDefault">
+      <Position>4</Position>
+      <DataType>INT(10)|4s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <index id="16" parent="9" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="17" parent="9" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="18" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="19" parent="10" name="name">
+      <Position>2</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="20" parent="10" name="password">
+      <Position>3</Position>
+      <DataType>VARCHAR(32)|12s</DataType>
+    </column>
+    <column id="21" parent="10" name="lastLoginTime">
+      <Position>4</Position>
+      <DataType>DATETIME(19)|93s</DataType>
+    </column>
+    <index id="22" parent="10" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="23" parent="10" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="24" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="25" parent="11" name="name">
+      <Position>2</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="26" parent="11" name="sex">
+      <Position>3</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="27" parent="11" name="empNo">
+      <Position>4</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="28" parent="11" name="job">
+      <Position>5</Position>
+      <DataType>VARCHAR(200)|12s</DataType>
+    </column>
+    <column id="29" parent="11" name="birthday">
+      <Position>6</Position>
+      <DataType>DATETIME(19)|93s</DataType>
+    </column>
+    <column id="30" parent="11" name="sal">
+      <Position>7</Position>
+      <DataType>DOUBLE(22)|8s</DataType>
+    </column>
+    <column id="31" parent="11" name="hireday">
+      <Position>8</Position>
+      <DataType>DATETIME(19)|93s</DataType>
+    </column>
+    <index id="32" parent="11" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="33" parent="11" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
